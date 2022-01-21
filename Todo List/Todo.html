@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Todo List</title>
+        <link rel="stylesheet" href="Todo.css">
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+    </head>
+
+    <body>
+
+        <header>
+            <h1>Todo List</h1>
+        </header>
+
+        <div class="Notes">
+          <div class="todo_box">
+            <div class = "input_box">
+              <input id="todo_input" name="text" class="todo_input" placeholder="Add Notes" maxlength="50">
+              <input type="hidden" id="saveIndex" />
+              <button class="add_button" id="add_todo_button">
+                  <i class="fas fa-plus-square"></i>
+              </button>
+              <button class="save_button" style="display: none" id="save_todo_button">
+                  <i class="fas fa-save"></i>
+              </button>
+            </div>
+              <div id="listBox">
+              </div>
+          </div>
+        </div>
+    <script src="todo.js"></script>    
+    </body>
+</html>
